@@ -14,6 +14,10 @@ let package = Package(
         .target(
             name: "PersonalizedAdConsent",
             path: "PersonalizedAdConsent/PersonalizedAdConsent",
+            exclude: ["Info.plist"],
+            resources: [
+                .copy("PersonalizedAdConsent.bundle")
+            ],
             publicHeadersPath: "."
         )
     ]
